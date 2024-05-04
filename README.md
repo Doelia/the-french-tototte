@@ -2,7 +2,7 @@
 
 Intégration graphique HTML/CSS du projet ["The French Tototte"](https://www.youtube.com/watch?v=FVEqE47pOLw&ab_channel=BastiUi).
 
-J'ai intégré les deux premiers écrans, responsive. Il manque les autres écrans et les animations.
+J'ai intégré les deux premiers écrans, responsive. Il manque les autres écrans, l'intégration correcte du header au scroll et les animations.
 
 ## Démo
 
