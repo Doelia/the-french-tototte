@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  app:
+    image: doelia/the-french-tototte:main
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - VIRTUAL_HOST=the-french-tototte.doelia.fr
+    restart: always
+
+networks:
+  default:
+    name: http_public
+    external: true
