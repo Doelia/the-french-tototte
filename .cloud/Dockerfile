@@ -17,5 +17,5 @@ RUN npm run build
 
 FROM nginx:alpine
 
-COPY --from=build /appp/out /usr/share/nginx/html
+COPY --from=build /app/out /usr/share/nginx/html
 

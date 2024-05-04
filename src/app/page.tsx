@@ -7,7 +7,11 @@ export default function Home() {
   return (
     <main className="relative">
         <div className={"absolute h-screen w-full z-10"}>
-            <video src="https://framerusercontent.com/assets/OyaZIWy09WQG65KyxheDyjLJw.mp4" className={"absolute object-cover h-full w-full opacity-70"} loop={true} autoPlay={true} muted={true}></video>
+            <video src="https://framerusercontent.com/assets/OyaZIWy09WQG65KyxheDyjLJw.mp4"
+                   className={"absolute object-cover h-full w-full opacity-70"}
+                   loop={true} autoPlay={true} muted={true} controls={false} playsInline={true}
+
+            ></video>
         </div>
         <Header></Header>
         <Intro></Intro>
