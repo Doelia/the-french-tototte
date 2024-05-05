@@ -28,6 +28,7 @@ const config: Config = {
         bg1: '#F7F3F0',
         bg2: '#FAF6F3',
         bg3: '#EBE0D8',
+        bg4: '#EFF2FD',
         fg1: '#30171B',
         fg2: '#5D4043',
         fg3: '#816A6C',
