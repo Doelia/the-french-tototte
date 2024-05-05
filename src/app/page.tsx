@@ -9,6 +9,8 @@ import {useIsReached} from "@/app/useIsReached";
 import Footer from "@/app/parts/Footer";
 import Techno from "@/app/parts/Techno";
 import Pods from "@/app/parts/Pods";
+import Bluetooth from "@/app/parts/Bluetooth";
+import Spotify from "@/app/parts/Spotify";
 
 export default function Home() {
 
@@ -34,6 +36,10 @@ export default function Home() {
         </div>
         <Techno></Techno>
         <Pods></Pods>
+        <div className={"h-[200px]"}></div>
+        <Bluetooth></Bluetooth>
+        <div className={"h-[200px]"}></div>
+        <Spotify />
         <div className={"h-[200px]"}></div>
         <Footer />
     </main>
