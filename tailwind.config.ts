@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        '200px': '200px',
+      },
       backgroundSize: {
         'size-200': '200% 200%',
       },
