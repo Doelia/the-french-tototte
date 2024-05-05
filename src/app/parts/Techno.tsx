@@ -1,5 +1,6 @@
 import {tartuffo} from "@/fonts/fonts";
 import Link from "next/link";
+import SimpleButton from "@/app/components/SimpleButton";
 
 export default function Techno() {
     return (
@@ -18,7 +19,7 @@ export default function Techno() {
                     </div>
                 </div>
                 <div className={"text-center mb-5"}>
-                    <Link href={"/"}>Découvrir les saveurs</Link>
+                    <SimpleButton href={"/"} title={"Découvrir les saveurs"}></SimpleButton>
                 </div>
                 <div className={"mx-auto h-[200px] w-[1px] bg-gradient-to-b from-fg2 to-transparent"}></div>
             </div>

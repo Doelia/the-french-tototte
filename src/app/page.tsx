@@ -28,7 +28,10 @@ export default function Home() {
         <Intro refFirstScreenTrigger={refFirstScreenTrigger}></Intro>
         <div className={"h-[200px]"}></div>
         <Bento></Bento>
-        <div className={"h-[200px]"}></div>
+        <div className={"h-[300px]"}></div>
+        <div className={"mx-auto relative container max-w-3xl h-3"}>
+            <img src={"/technology.gif"} className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"} width={500} />
+        </div>
         <Techno></Techno>
         <Pods></Pods>
         <div className={"h-[200px]"}></div>
