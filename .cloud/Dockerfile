@@ -15,7 +15,9 @@ COPY tsconfig.json .
 
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginx
 
 COPY --from=build /app/out /usr/share/nginx/html
+
+RUN chmod -R 755 /usr/share/nginx/html
 

@@ -13,7 +13,7 @@ export default function Bluetooth() {
             </div>
 
             <div>
-                <img src="/bluetooth.webp" width={600} alt="" className={"mx-auto transition -rotate-45 group-hover:-rotate-12 scale-50 md:scale-100"}/>
+                <img src="/bluetooth.webp" width={600} alt="" className={"mx-auto duration-1000 transition -rotate-45 group-hover:-rotate-12 scale-50 md:scale-100"}/>
             </div>
 
             <div className={"flex justify-end mt-10"}>

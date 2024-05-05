@@ -8,7 +8,7 @@ export default function Mynthos() {
 
                 <div className={"flex flex-col md:flex-row gap-12"}>
                     <div className={"md:w-1/2 text-5xl"}>
-                        <img src="/mynthos.webp" alt=""/>
+                        <img src="/mynthos.webp" alt="" className={"transition hover:skew-y-6"}/>
                     </div>
                     <div className={"md:w-1/2 text-fg3 text-sm"}>
                         <div className={"mb-3 text-6xl text-fg1  " + tartuffo.className}>le jus de mynthos</div>

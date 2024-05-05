@@ -2,8 +2,8 @@ version: '3.9'
 services:
   app:
     image: doelia/the-french-tototte:main
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    ports:
+    - "9098:80"
     environment:
       - VIRTUAL_HOST=the-french-tototte.doelia.fr
     restart: always
