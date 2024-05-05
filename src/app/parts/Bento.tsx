@@ -3,6 +3,7 @@ import {tartuffo} from "@/fonts/fonts";
 export default function Bento() {
 
     const padding = 5;
+    const animated = " transition-translate duration-500 ";
 
     const classTitle = "lowercase text-2xl md:text-3xl text-fg2 mb-2 " + tartuffo.className;
     const classText = "text-sm text-fg3";
@@ -11,17 +12,21 @@ export default function Bento() {
         <div className="container max-w-[900px] mx-auto px-5">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
 
-                <div className={"md:row-span-2 rounded bg-gradient-to-b from-white to-bgblue min-h-[400px] md:min-h-[450px] relative"}>
-                    <img src={"/bento/TransCote1.png"} width={230} height={285}  alt={""} className={"absolute top-10"}/>
-                    <div className={"p-"+padding+" flex flex-col justify-end h-full relative"}>
+                <div className={"group md:row-span-2 rounded bg-gradient-to-b from-white to-bgblue min-h-[400px] md:min-h-[450px] relative flex items-end" + animated}>
+                    <img src={"/bento/TransCote1.png"} width={230}  alt={""}
+                         className={"absolute top-10 origin-left group-hover:translate-y-2 group-hover:scale-110" + animated}
+                    />
+                    <div className={"p-"+padding+" relative"}>
                         <h3 className={classTitle}>Elegante et sophistiquee</h3>
                         <p className={classText}>Design raffiné et ornements exclusifs pour une expérience de vapotage distinguée et élégante.</p>
                     </div>
                 </div>
 
-                <div className="md:col-span-2 rounded bg-white min-h-[250px] flex items-center justify-between" style={{background: '#EEEEEE'}}>
+                <div className="group md:col-span-2 rounded bg-white min-h-[250px] flex items-center justify-between" style={{background: '#EEEEEE'}}>
                     <div className={"w-6/12"}>
-                        <img src={"/bento/image14.png"} width={150} height={150}  alt={""} className={"me-10"}/>
+                        <img src={"/bento/image14.png"} width={150} alt={""}
+                             className={"me-10 origin-left group-hover:scale-110" + animated}
+                        />
                     </div>
                     <div className={"w-6/12 pe-" + padding}>
                         <h3 className={classTitle}>Personnalisable</h3>
@@ -29,16 +34,22 @@ export default function Bento() {
                     </div>
                 </div>
 
-                <div className={"rounded bg-gradient-to-r from-bgblue via-white to-bgred min-h-[250px] relative"}>
-                    <img src={"/bento/moustache.png"} width={200} height={52}  alt={""} className={"absolute my-10 m-auto left-0 right-0"}/>
-                    <div className={"flex flex-col h-full justify-end p-" + padding + " relative text-center"}>
+                <div className={"group rounded bg-gradient-to-r from-bgblue via-white to-bgred min-h-[250px] relative flex items-end"}>
+                    <div className={"rounded absolute inset-0 bg-gradient-to-r from-blue-500 via-white to-red-500 opacity-0 group-hover:opacity-25" + animated} />
+                    <div className={"rounded absolute inset-0 bg-gradient-to-t from-white to-gray-300 from-50% opacity-0 group-hover:opacity-50" + animated} />
+                    <img src={"/bento/moustache.png"} width={200} alt={""}
+                         className={"absolute my-10 m-auto left-0 right-0 top-0 group-hover:-rotate-6 group-hover:scale-110" + animated}
+                    />
+                    <div className={"p-" + padding + " relative text-center"}>
                         <h3 className={classTitle}>Made in france</h3>
-                        <p className={classText}>Savoir-faire français pour une expérience de suçotage authentique et exceptionnelle.</p>
+                        <p className={classText}>Savoir-faire francais pour une expérience de suçotage authentique et exceptionnelle.</p>
                     </div>
                 </div>
 
-                <div className={"rounded bg-gradient-to-b from-white from-50% to-bg3 min-h-[200px] w:min-h-[250px] relative"}>
-                    <img src={"/bento/0115.png"} width={200} height={200}  alt={""} className={"absolute bottom-0 right-0"}/>
+                <div className={"group rounded bg-gradient-to-b from-white from-50% to-bg3 min-h-[200px] w:min-h-[250px] relative"}>
+                    <img src={"/bento/0115.png"} width={250} alt={""}
+                         className={"absolute bottom-0 right-0 group-hover:-translate-y-6" + animated}
+                    />
                     <div className={"relative flex flex-col h-full justify-start p-" + padding}>
                         <h3 className={classTitle}>Innovante</h3>
                         <p className={classText}>
@@ -47,22 +58,27 @@ export default function Bento() {
                     </div>
                 </div>
 
-                <div className={"md:col-span-2 bg-bgblue rounded relative"}>
-                    <img src={"/bento/ampoules.png"} width={400} height={200}  alt={""} className={"absolute bottom-0 right-0"}/>
+                <div className={"group md:col-span-2 bg-bgblue rounded relative overflow-hidden"}>
+                    <img src={"/bento/ampoules.png"} width={450}  alt={""}
+                         className={"absolute bottom-0 right-0 group-hover:translate-x-0 translate-x-20" + animated}
+                    />
                     <div className={"relative w-6/12 p-" + padding}>
                         <h3 className={classTitle}>Savoureuse</h3>
                         <p className={classText}>Palette de saveurs exquises pour une expérience de suçotage délicieusement satisfaisante et immersive.</p>
                     </div>
                 </div>
 
-                <div className={"bg-bg3 rounded md:min-h-[250px]"}>
-                    <div className={"h-full flex flex-col p-" + padding}>
-                        <div className={"grow mb-5"}>
-                            <img className={""} src={"/france.svg"} width={24} height={6} alt={"France"} />
-                        </div>
-                        <div>
-                            <h3 className={classTitle}>Hebergement 100% français</h3>
-                            <p className={classText}>Notre site web est hébergé en france grâce à notre partenaire o2switch.</p>
+                <div className={"group bg-bg3 hover:bg-white rounded md:min-h-[250px]" + animated}>
+                    <div className={"h-full p-"+padding}>
+                        <div className={"relative h-full flex items-end"}>
+                            <img  src={"/france.svg"} alt={"France"}
+                                  className={"absolute top-0 left-0 w-[25px] h-[10px] group-hover:h-[100px]" + animated}
+                            />
+                            <div className={"absolute transition-[opacity] top-0 left-0 w-[25px] h-[100px] bg-gradient-to-b from-transparent to-white opacity-0 group-hover:opacity-100"}></div>
+                            <div className={"relative"}>
+                                <h3 className={classTitle}>Hebergement 100% français</h3>
+                                <p className={classText}>Notre site web est hébergé en france grâce à notre partenaire o2switch.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
