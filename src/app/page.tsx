@@ -1,9 +1,17 @@
+'use client'
+
 import Bento from "@/app/parts/Bento";
 import Intro from "@/app/parts/Intro";
 import Header from "@/app/parts/Header";
 import Link from "next/link";
+import {useRef, useState} from "react";
+import {useIsReached} from "@/app/useIsReached";
 
 export default function Home() {
+
+    const refFirstScreenTrigger = useRef();
+    const fullHeaderMode = useIsReached(refFirstScreenTrigger);
+
   return (
     <main className="relative">
         <div className={"absolute h-screen w-full z-10"}>
@@ -13,8 +21,8 @@ export default function Home() {
 
             ></video>
         </div>
-        <Header></Header>
-        <Intro></Intro>
+        <Header fullHeaderMode={fullHeaderMode}></Header>
+        <Intro refFirstScreenTrigger={refFirstScreenTrigger}></Intro>
         <div className={"h-[200px]"}></div>
         <Bento></Bento>
         <div className={"h-[200px]"}></div>
