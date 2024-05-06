@@ -13,10 +13,10 @@ export default function Clients() {
                 <div className={"mb-5 text-6xl text-fg1  " + tartuffo.className}>ils ont sucotes,<br/>ils ont adore</div>
                 <div className={"text-fg3 text-sm"}>Nos totottes sont utilisées par les plus grands de ce monde et si vous voulez mon avis ce n’est pas un hasard</div>
             </div>
-            <div className="container mx-auto max-w-3xl pt-20 px-5">
-                <div className={"flex gap-20 flex-col md:flex-row items-center md:items-start"}>
+            <div className="container mx-auto max-w-4xl pt-20 px-5">
+                <div className={"flex gap-20 lg:gap-40 flex-col md:flex-row items-center md:items-start"}>
                     <Client className={"md:mt-20"}>
-                        <img src="/clients/baghera.webp" alt="" className={"rounded-full mb-5"}/>
+                        <img src="/clients/baghera.webp" alt="" className={"rounded-full mb-5 hover:scale-105 transition"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Baghera Jones</div>
                         <div className="flex items-center mt-2 gap-2">
                             <i className="fa-brands fa-twitch"></i>
@@ -29,7 +29,7 @@ export default function Clients() {
                         </div>
                     </Client>
                     <Client className={"md:mt-40"}>
-                        <img src="/clients/jdg.webp" alt="" className={"rounded-full mb-5"}/>
+                        <img src="/clients/jdg.webp" alt="" className={"rounded-full mb-5 transition hover:scale-105"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Joueur_du_Grenier</div>
                         <div className="flex items-center mt-2 gap-2">
                             <i className="fa-brands fa-youtube"></i>
@@ -42,7 +42,7 @@ export default function Clients() {
                         </div>
                     </Client>
                     <Client className={""}>
-                        <img src="/clients/etoiles.webp" alt="" className={"rounded-full mb-5"}/>
+                        <img src="/clients/etoiles.webp" alt="" className={"rounded-full mb-5 hover:scale-105 transition"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Etoiles</div>
                         <div className="flex items-center mt-2 gap-2">
                             <i className="fa-brands fa-twitch"></i>
@@ -72,7 +72,7 @@ function Client({className, children}) {
         + (isVisible ? "opacity-100" : "opacity-0")
 
     return (
-        <div className={className + " md:w-1/3 w-1/2 " + revealAnimation} ref={ref}>
+        <div className={className + " md:w-1/3 w-1/2 " + revealAnimation + " "} ref={ref}>
             {children}
         </div>
 

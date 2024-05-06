@@ -1,6 +1,8 @@
 import {tartuffo} from "@/fonts/fonts";
-import React from "react";
+import React, {useEffect} from "react";
 import Button from "@/app/components/Button";
+
+import {useTextAnimated} from "@/app/useTextAnimated";
 
 export default function Cart({pack, ornement, finition}) {
 
@@ -33,6 +35,21 @@ export default function Cart({pack, ornement, finition}) {
 
     const totalPrice = totottePrice + packPrice;
 
+    const totalPriceRef = React.useRef(null);
+    useTextAnimated(totalPriceRef, totalPrice.toFixed(2) + ' €');
+
+    const finitonNameRef = React.useRef(null);
+    useTextAnimated(finitonNameRef, '+ ' + finitionName);
+
+    const ornementNameRef = React.useRef(null);
+    useTextAnimated(ornementNameRef, '+ ' + ornementName);
+
+    const packNameRef = React.useRef(null);
+    useTextAnimated(packNameRef, '1x ' + packName);
+
+    const packPriceRef = React.useRef(null);
+    useTextAnimated(packPriceRef, packPrice.toFixed(2) + ' €');
+
     return (
         <div className={"relative bg-fg1 text-white"}>
             <div className="container mx-auto max-w-7xl px-5 flex flex-col md:flex-row justify-end">
@@ -43,20 +60,20 @@ export default function Cart({pack, ornement, finition}) {
                     <p className={"text-sm text-fg3 mb-5"}>
                         Récapitulatif de votre commande
                     </p>
-                    <div className={"flex flex-col gap-3"}>
+                    <div className={"flex flex-col gap-3 mb-8"}>
                         <div className={"flex justify-between text-bg3"}>
                             <div>
                                 <div>1 x thefrenchtototte</div>
-                                <div className={"ms-2"}>+ {finitionName}</div>
-                                <div className={"ms-2"}>+ {ornementName}</div>
+                                <div className={"ms-2"} ref={finitonNameRef}></div>
+                                <div className={"ms-2"} ref={ornementNameRef}></div>
                             </div>
                             <div>
                                 { totottePrice.toFixed(2) } €
                             </div>
                         </div>
                         <div className={"flex justify-between text-bg3"}>
-                            <div>1 x {packName}</div>
-                            <div> {packPrice.toFixed(2)} € </div>
+                            <div ref={packNameRef}></div>
+                            <div ref={packPriceRef}></div>
                         </div>
                         <div className={"flex justify-between text-bg3"}>
                             <div>Livraison</div>
@@ -64,16 +81,16 @@ export default function Cart({pack, ornement, finition}) {
                         </div>
                         <div className={"flex justify-between text-bg3"}>
                             <div>Prix</div>
-                            <div>{totalPrice.toFixed(2)} €</div>
+                            <div ref={totalPriceRef}></div>
                         </div>
                     </div>
 
-                    <div className={"mt-8 mb-10"}>
-                        <div className={"flex justify-between text-bg3"}>
-                            <div>Retrait en magasin</div>
-                            <div></div>
-                        </div>
-                    </div>
+                    {/*<div className={"mt-8 mb-10"}>*/}
+                    {/*    <div className={"flex justify-between text-bg3"}>*/}
+                    {/*        <div>Retrait en magasin</div>*/}
+                    {/*        <div></div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                     <Button title={"Ajouter au panier"} className={"w-full mb-5"} />
 

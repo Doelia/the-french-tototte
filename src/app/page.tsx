@@ -72,7 +72,7 @@ export default function Home() {
             <div className={"h-[200px]"}></div>
 
             <Clients></Clients>
-            <div className={"h-[100px] bg-bg4"}></div>
+            <div className={"h-[200px] bg-bg4"}></div>
 
             <div className={"relative bg-bg4"} ref={shopRef}>
                 <div className="container mx-auto max-w-7xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-12">

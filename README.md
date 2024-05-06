@@ -1,8 +1,6 @@
 # The French Tototte
 
-Intégration graphique HTML/CSS du projet ["The French Tototte"](https://www.youtube.com/watch?v=FVEqE47pOLw&ab_channel=BastiUi).
-
-J'ai intégré les deux premiers écrans, responsive. Il manque les autres écrans, l'intégration correcte du header au scroll et les animations.
+Intégration graphique & dev du projet ["The French Tototte"](https://www.youtube.com/watch?v=FVEqE47pOLw&ab_channel=BastiUi).
 
 ## Démo
 
@@ -12,6 +10,8 @@ https://the-french-tototte.doelia.fr/
 
 - Next.JS / React
 - TailwindCSS
+- Fontawesome
+- Carrousel: flowbite
 
 ## Installation
 

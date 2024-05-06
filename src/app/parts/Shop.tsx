@@ -3,6 +3,10 @@ import {useState} from "react";
 
 export default function Shop({finition, setFinition, ornement, setOrnement, pack, setPack}) {
 
+    if (finition === '1') {
+        setOrnement('1');
+    }
+
     return (
         <div>
             <div className={"mb-20"}>
