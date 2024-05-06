@@ -100,7 +100,7 @@ export default function Home() {
 
             <div className={"h-[50px] bg-bg4"}></div>
 
-            <Cart pack={pack} />
+            <Cart pack={pack} finition={finition} ornement={ornement} />
 
         </div>
 

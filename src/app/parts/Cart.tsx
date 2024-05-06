@@ -2,9 +2,23 @@ import {tartuffo} from "@/fonts/fonts";
 import React from "react";
 import Button from "@/app/components/Button";
 
-export default function Cart({pack}) {
+export default function Cart({pack, ornement, finition}) {
 
     const totottePrice = 99;
+
+    let finitionName = '';
+    if (finition === '1') {
+        finitionName = 'Finition or';
+    } else {
+        finitionName = 'Finition argent';
+    }
+
+    let ornementName = '';
+    if (ornement === '2') {
+        ornementName = 'Ornement Obsidiennes';
+    } else {
+        ornementName = 'Ornement Saphir Royal';
+    }
 
     let packPrice = 0;
     let packName = 'Pack starter';
@@ -33,8 +47,8 @@ export default function Cart({pack}) {
                         <div className={"flex justify-between text-bg3"}>
                             <div>
                                 <div>1 x thefrenchtototte</div>
-                                <div className={"ms-2"}>+ Finition argent</div>
-                                <div className={"ms-2"}>+ Ornement obsidiennes</div>
+                                <div className={"ms-2"}>+ {finitionName}</div>
+                                <div className={"ms-2"}>+ {ornementName}</div>
                             </div>
                             <div>
                                 { totottePrice.toFixed(2) } €
