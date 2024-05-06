@@ -1,5 +1,6 @@
 import {tartuffo} from "@/fonts/fonts";
 import React from "react";
+import Button from "@/app/components/Button";
 
 export default function Cart({pack}) {
 
@@ -60,7 +61,7 @@ export default function Cart({pack}) {
                         </div>
                     </div>
 
-                    <button className={"w-full bg-fg2 text-bg2 p-3 mb-5"}>Ajouter au panier</button>
+                    <Button title={"Ajouter au panier"} className={"w-full mb-5"} />
 
                     <p className={"text-fg3 text-xs"}>
                         The French Tototte est couverte par une garantie limitée contre les défauts de fabrication pour une période de 2 mois à compter de la date d'achat. Cette garantie ne couvre pas les dommages causés par une mauvaise utilisation, une négligence ou une modification non autorisée du produit. Dans les limites permises par la loi, thefrenchtototte décline toute responsabilité pour les dommages directs, indirects, spéciaux, accidentels ou consécutifs découlant de l'utilisation ou de l'incapacité d'utiliser thefrenchtototte, même si thefrenchtototte a été informée de la possibilité de tels dommages.

@@ -27,6 +27,10 @@ export default function Home() {
     const [ornement, setOrnement] = useState('1')
     const [pack, setPack] = useState('1');
 
+    const shopRef = useRef();
+    const bentoRef = useRef();
+    const podsRef = useRef();
+
   return (
     <main className="relative">
 
@@ -38,14 +42,13 @@ export default function Home() {
             ></video>
         </div>
 
-        <Header fullHeaderMode={fullHeaderMode}></Header>
+        <Header fullHeaderMode={fullHeaderMode} shopRef={shopRef}></Header>
 
-        <Intro refFirstScreenTrigger={refFirstScreenTrigger}></Intro>
+        <Intro refFirstScreenTrigger={refFirstScreenTrigger} bentoRef={bentoRef}></Intro>
 
         <div className={"relative z-40"}>
 
-            <div className={"h-[200px]"}></div>
-
+            <div className={"h-[200px]"} ref={bentoRef}></div>
             <Bento></Bento>
 
             <div className={"h-[300px]"}></div>
@@ -53,8 +56,9 @@ export default function Home() {
                 <img src={"/technology.gif"} className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"} width={500} />
             </div>
 
-            <Techno></Techno>
+            <Techno podsRef={podsRef}></Techno>
 
+            <div ref={podsRef}></div>
             <Pods></Pods>
             <div className={"h-[200px]"}></div>
 
@@ -70,12 +74,12 @@ export default function Home() {
             <Clients></Clients>
             <div className={"h-[100px] bg-bg4"}></div>
 
-            <div className={"relative bg-bg4"}>
+            <div className={"relative bg-bg4"} ref={shopRef}>
                 <div className="container mx-auto max-w-7xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-12">
                     <div className={"grow z-40"}>
                         <div className={"sticky top-32"}>
                             <div className="w-100 aspect-video">
-                                <Carousel>
+                                <Carousel draggable={false}>
                                     <img src={"/carousel/1-" + finition + '-' + ornement + '.png'} alt="..." />
                                     <img src={"/carousel/2-" + finition + '-' + ornement + '.png'} alt="..." />
                                     <img src={"/carousel/3-" + finition + '-' + ornement + '.png'} alt="..." />

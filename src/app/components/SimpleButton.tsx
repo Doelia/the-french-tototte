@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-export default function SimpleButton({href, title}) {
+export default function SimpleButton({title, onClick}) {
 
     return (
-        <Link href={href} className={"lowercase mb-8 text-fg2 relative group"}>
+        <button onClick={onClick} className={"lowercase mb-8 text-fg2 relative group"}>
             <div className={"absolute left-1/2 transform -translate-x-1/2 h-[1px] bg-fg1 -bottom-2 w-0 group-hover:w-full transition-[width] duration-300"}></div>
             {title}
-        </Link>
+        </button>
     )
 
 }

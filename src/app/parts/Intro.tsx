@@ -4,7 +4,7 @@ import {useRef} from "react";
 import Link from "next/link";
 import SimpleButton from "@/app/components/SimpleButton";
 
-export default function Intro({refFirstScreenTrigger}) {
+export default function Intro({refFirstScreenTrigger, bentoRef}) {
 
     const textAnimated = "" +
         "absolute inset-0 " +
@@ -13,6 +13,10 @@ export default function Intro({refFirstScreenTrigger}) {
         "group-hover:bg-[top_-100px_left_500%]" +
         ""
     ;
+
+    function btnDecouvrir() {
+        bentoRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    }
 
     return (
         <div className={"h-screen flex items-end justify-center"}>
@@ -25,7 +29,7 @@ export default function Intro({refFirstScreenTrigger}) {
                         <h2 className={"lowercase text-5xl md:text-7xl text-fg2 " + tartuffo.className}>Pour ceux qui osent etre differents</h2>
                         <h2 className={"lowercase text-5xl md:text-7xl text-fg2 " + tartuffo.className + " " + textAnimated}>Pour ceux qui osent etre differents</h2>
                     </div>
-                    <SimpleButton href={"/"} title={"Decouvrir"}></SimpleButton>
+                    <SimpleButton title={"Decouvrir"} onClick={btnDecouvrir}></SimpleButton>
                 </div>
                 <div className={"relative h-10"}>
                     <div className={"h-[150px] w-[1px] bg-gradient-to-b from-fg2 to-transparent absolute left-1/2 z-40"}></div>

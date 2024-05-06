@@ -2,7 +2,11 @@ import Button from "@/app/components/Button";
 import Link from "next/link";
 import {tartuffo} from "@/fonts/fonts";
 
-export default function Header({fullHeaderMode}) {
+export default function Header({fullHeaderMode, shopRef}) {
+
+    function btnShop() {
+        shopRef.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    }
 
     return (
         <header className={"fixed w-full z-50 pb-10"}>
@@ -13,10 +17,10 @@ export default function Header({fullHeaderMode}) {
                         <span className={"lowercase md:text-3xl text-2xl mb-3 text-fg2 " + tartuffo.className}> the french tototte </span>
                     </div>
                     <div className={"flex justify-between relative"}>
-                        <Link href="/">
+                        <Link href="/" scroll={false}>
                             <img src="/logo.svg" width={32} height={32} alt="Logo" />
                         </Link>
-                        <Button title="Acheter"></Button>
+                        <Button title="Acheter" onClick={btnShop}></Button>
                     </div>
                 </div>
             </div>

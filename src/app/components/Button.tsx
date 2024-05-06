@@ -1,7 +1,7 @@
-export default function Button({title}) {
+export default function Button({title, className = "", onClick = () => {}}) {
 
     return (
-        <button className="group bg-primary text-white py-2 px-6 relative hover:bg-black transition duration-500">
+        <button onClick={onClick} className={className + " group bg-primary text-white py-2 px-6 relative hover:bg-black transition duration-500"}>
             <BgAnimated/>
             <div className={"relative"}>
                 {title}

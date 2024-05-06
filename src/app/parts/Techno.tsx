@@ -2,7 +2,12 @@ import {tartuffo} from "@/fonts/fonts";
 import Link from "next/link";
 import SimpleButton from "@/app/components/SimpleButton";
 
-export default function Techno() {
+export default function Techno({podsRef}) {
+
+    function btnDecouvrir() {
+        podsRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    }
+
     return (
         <div className={"bg-gradient-to-t from-bg2 from-70% to-bg3"}>
             <div className="container mx-auto max-w-2xl pt-20 px-5">
@@ -19,7 +24,7 @@ export default function Techno() {
                     </div>
                 </div>
                 <div className={"text-center mb-5"}>
-                    <SimpleButton href={"/"} title={"Découvrir les saveurs"}></SimpleButton>
+                    <SimpleButton onClick={btnDecouvrir} title={"Découvrir les saveurs"}></SimpleButton>
                 </div>
                 <div className={"mx-auto h-[200px] w-[1px] bg-gradient-to-b from-fg2 to-transparent"}></div>
             </div>

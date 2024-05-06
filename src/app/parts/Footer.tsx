@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
         <div className={"bg-fg1 p-5"}>
-            <img src="/logo_footer.svg" width={500} height={500} alt="" className={"absolute bottom-0 -left-[150px] z-40 opacity-50"}/>
+            <img src="/logo_footer.svg" width={700} height={700} alt="" className={"absolute bottom-0 -left-[150px] z-40 opacity-50"}/>
             <div className={"relative container mx-auto max-w-7xl px-5 z-50"}>
                 <div className={"flex flex-col md:flex-row md:gap-10 md:items-center"}>
                     <div className={"text-nowrap text-xl md:text-6xl text-fg3 " + tartuffo.className}>the french tototte</div>
