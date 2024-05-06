@@ -5,13 +5,7 @@ import {useIsVisible} from "@/app/useIsVisible";
 
 export default function Clients() {
 
-    const bagheraRef = useRef(null);
-    const bagreraIsReached = useIsVisible(bagheraRef);
 
-    const revealAnimation = "transition duration-300 transform "
-        + (bagreraIsReached ? "translate-x-0" : "translate-y-20")
-        + " "
-        + (bagreraIsReached ? "opacity-100" : "opacity-0")
 
     return (
         <div className={"bg-gradient-to-b from-bg2 to-bg4"}>
@@ -21,7 +15,7 @@ export default function Clients() {
             </div>
             <div className="container mx-auto max-w-3xl pt-20 px-5">
                 <div className={"flex gap-20 flex-col md:flex-row items-center md:items-start"}>
-                    <div className={"md:mt-20 md:w-1/3 w-1/2 delay-50 " + revealAnimation} ref={bagheraRef}>
+                    <Client className={"md:mt-20"}>
                         <img src="/clients/baghera.webp" alt="" className={"rounded-full mb-5"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Baghera Jones</div>
                         <div className="flex items-center">
@@ -33,8 +27,8 @@ export default function Clients() {
                         <div className={"text-fg3 text-sm mt-5"}>
                             J’ai arrêté de vape depuis que j’ai découvert <span className={"text-fg1 " + tartuffo.className}>the french tototte</span>.
                         </div>
-                    </div>
-                    <div className={"md:mt-40 md:w-1/3 w-1/2 delay-25 " + revealAnimation}>
+                    </Client>
+                    <Client className={"md:mt-40"}>
                         <img src="/clients/jdg.webp" alt="" className={"rounded-full mb-5"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Joueur_du_Grenier</div>
                         <div className="flex items-center">
@@ -46,8 +40,8 @@ export default function Clients() {
                         <div className={"text-fg3 text-sm mt-5"}>
                             J’ai commandé un pack pour toute la famille et même mon fils Légolas San Goku adore sa <span className={"text-fg1 " + tartuffo.className}>the french tototte</span>.
                         </div>
-                    </div>
-                    <div className={"md:w-1/3 w-1/2 " + revealAnimation}>
+                    </Client>
+                    <Client className={""}>
                         <img src="/clients/etoiles.webp" alt="" className={"rounded-full mb-5"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Etoiles</div>
                         <div className="flex items-center">
@@ -60,10 +54,27 @@ export default function Clients() {
                             Grâce à  <span className={"text-fg1 " + tartuffo.className}>the french tototte</span>,
                             je régule mon taux d’insuline parfaitement et je n’achète plus de saumon ni de nutella !
                         </div>
-                    </div>
+                    </Client>
                 </div>
             </div>
         </div>
     )
 }
 
+function Client({className, children}) {
+
+    const ref = useRef(null);
+    const isVisible = useIsVisible(ref);
+
+    const revealAnimation = "transition duration-500 transform "
+        + (isVisible ? "translate-x-0" : "translate-y-20")
+        + " "
+        + (isVisible ? "opacity-100" : "opacity-0")
+
+    return (
+        <div className={className + " md:w-1/3 w-1/2 " + revealAnimation} ref={ref}>
+            {children}
+        </div>
+
+    )
+}
