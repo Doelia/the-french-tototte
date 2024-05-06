@@ -14,11 +14,16 @@ import Spotify from "@/app/parts/Spotify";
 import Mynthos from "@/app/parts/Mynthos";
 import Clients from "@/app/parts/Clients";
 import Shop from "@/app/parts/Shop";
+import {Carousel} from "flowbite-react";
 
 export default function Home() {
 
     const refFirstScreenTrigger = useRef();
     const fullHeaderMode = useIsReached(refFirstScreenTrigger);
+
+    const [finition, setFinition] = useState('2')
+    const [ornement, setOrnement] = useState('1')
+    const [pack, setPack] = useState('1');
 
   return (
     <main className="relative">
@@ -60,12 +65,28 @@ export default function Home() {
             <div className={"h-[200px]"}></div>
 
             <Clients></Clients>
-            <div className={"h-[300px] bg-bg4"}></div>
+            <div className={"h-[100px] bg-bg4"}></div>
 
             <div className={"bg-bg4"}>
-                <div className="container mx-auto max-w-3xl pt-20 px-5 z-50 flex justify-end">
-                    <div className={"w-1/2"}>
-                        <Shop></Shop>
+                <div className="container mx-auto max-w-5xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-10">
+                    <div className={"md:w-1/2 xl:w-2/3"}>
+                        <div className={"sticky top-32"}>
+                            <div className="w-100 aspect-video">
+                                <Carousel>
+                                    <img src={"/carousel/1-" + finition + '-' + ornement + '.png'} alt="..." />
+                                    <img src={"/carousel/2-" + finition + '-' + ornement + '.png'} alt="..." />
+                                    <img src={"/carousel/3-" + finition + '-' + ornement + '.png'} alt="..." />
+                                </Carousel>
+                            </div>
+                        </div>
+                        <div className={"grow"}></div>
+                    </div>
+                    <div className={"md:w-1/2 xl:w-1/3"}>
+                        <Shop
+                            finition={finition} setFinition={setFinition}
+                            ornement={ornement} setOrnement={setOrnement}
+                            pack={pack} setPack={setPack}
+                        ></Shop>
                     </div>
                 </div>
             </div>
