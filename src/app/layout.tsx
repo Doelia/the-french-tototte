@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 
 import {custavo} from "@/fonts/fonts";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "The French Tototte",
@@ -18,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://kit.fontawesome.com/4ad02e5046.js" crossOrigin="anonymous"></script>
+      </head>
       <body className={custavo.className + ' bg-bg2'}>{children}</body>
     </html>
   );

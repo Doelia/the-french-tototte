@@ -23,12 +23,12 @@ export default function Bento() {
                 </div>
 
                 <div className="group md:col-span-2 rounded bg-white min-h-[250px] flex items-center justify-between" style={{background: '#EEEEEE'}}>
-                    <div className={"w-6/12"}>
+                    <div className={"w-5/12"}>
                         <img src={"/bento/image14.png"} width={150} alt={""}
                              className={"me-10 origin-left group-hover:scale-110" + animated}
                         />
                     </div>
-                    <div className={"w-6/12 pe-" + padding}>
+                    <div className={"w-7/12 pe-" + padding}>
                         <h3 className={classTitle}>Personnalisable</h3>
                         <p className={classText}>Ornements et accessoires premium pour créer une vapoteuse unique qui reflète votre style personnel.</p>
                     </div>
@@ -72,10 +72,10 @@ export default function Bento() {
                     <div className={"h-full p-"+padding}>
                         <div className={"relative h-full flex items-end"}>
                             <img  src={"/france.svg"} alt={"France"}
-                                  className={"absolute top-0 left-0 w-[25px] h-[10px] group-hover:h-[100px]" + animated}
+                                  className={"absolute top-0 left-0 w-[25px] h-[10px] md:group-hover:h-[100px]" + animated}
                             />
-                            <div className={"absolute transition-[opacity] top-0 left-0 w-[25px] h-[100px] bg-gradient-to-b from-transparent to-white opacity-0 group-hover:opacity-100"}></div>
-                            <div className={"relative"}>
+                            <div className={"hidden md:block absolute transition-[opacity] top-0 left-0 w-[25px] h-[100px] bg-gradient-to-b from-transparent to-white opacity-0 group-hover:opacity-100"}></div>
+                            <div className={"mt-5 md:mt-0 relative"}>
                                 <h3 className={classTitle}>Hebergement 100% français</h3>
                                 <p className={classText}>Notre site web est hébergé en france grâce à notre partenaire o2switch.</p>
                             </div>

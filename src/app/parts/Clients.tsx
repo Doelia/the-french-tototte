@@ -18,9 +18,9 @@ export default function Clients() {
                     <Client className={"md:mt-20"}>
                         <img src="/clients/baghera.webp" alt="" className={"rounded-full mb-5"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Baghera Jones</div>
-                        <div className="flex items-center">
-                            <img src="/icons/twitch.svg" width="12" height="12" alt="" className={"me-1 pt-2"}/>
-                            <div className={"text-md text-fg1 mt-2 "}>
+                        <div className="flex items-center mt-2 gap-2">
+                            <i className="fa-brands fa-twitch"></i>
+                            <div className={"text-md text-fg1 "}>
                                 Streamer
                             </div>
                         </div>
@@ -31,9 +31,9 @@ export default function Clients() {
                     <Client className={"md:mt-40"}>
                         <img src="/clients/jdg.webp" alt="" className={"rounded-full mb-5"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Joueur_du_Grenier</div>
-                        <div className="flex items-center">
-                            <img src="/icons/twitch.svg" width="12" height="12" alt="" className={"me-1 pt-2"}/>
-                            <div className={"text-md text-fg1 mt-2 "}>
+                        <div className="flex items-center mt-2 gap-2">
+                            <i className="fa-brands fa-youtube"></i>
+                            <div className={"text-md text-fg1"}>
                                 Youtubeur
                             </div>
                         </div>
@@ -44,9 +44,9 @@ export default function Clients() {
                     <Client className={""}>
                         <img src="/clients/etoiles.webp" alt="" className={"rounded-full mb-5"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Etoiles</div>
-                        <div className="flex items-center">
-                            <img src="/icons/twitch.svg" width="12" height="12" alt="" className={"me-1 pt-2"}/>
-                            <div className={"text-md text-fg1 mt-2 "}>
+                        <div className="flex items-center mt-2 gap-2">
+                            <i className="fa-brands fa-twitch"></i>
+                            <div className={"text-md text-fg1"}>
                                 Streamer
                             </div>
                         </div>
