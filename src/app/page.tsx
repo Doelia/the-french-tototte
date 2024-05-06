@@ -53,26 +53,26 @@ export default function Home() {
 
             <div className={"h-[300px]"}></div>
             <div className={"mx-auto relative container max-w-3xl h-3"}>
-                <img src={"/technology.gif"} className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"} width={500} />
+                <img src={"/videos/techno.webp"} className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"} width={500} />
             </div>
 
             <Techno podsRef={podsRef}></Techno>
 
             <div ref={podsRef}></div>
             <Pods></Pods>
-            <div className={"h-[100px] w:h-[200px]"}></div>
+            <div className={"h-[100px] md:h-[200px]"}></div>
 
             <Bluetooth></Bluetooth>
-            <div className={"h-[100px] w:h-[200px]"}></div>
+            <div className={"h-[100px] md:h-[200px]"}></div>
 
             <Spotify />
-            <div className={"h-[100px] w:h-[200px]"}></div>
+            <div className={"h-[100px] md:h-[200px]"}></div>
 
             <Mynthos />
-            <div className={"h-[100px] w:h-[200px]"}></div>
+            <div className={"h-[100px] md:h-[200px]"}></div>
 
             <Clients></Clients>
-            <div className={"h-[100px] w:h-[200px] bg-bg4"}></div>
+            <div className={"h-[100px] md:h-[200px] bg-bg4"}></div>
 
             <div className={"relative bg-bg4"} ref={shopRef}>
                 <div className="container mx-auto max-w-7xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-12">

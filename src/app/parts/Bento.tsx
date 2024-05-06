@@ -47,7 +47,7 @@ export default function Bento() {
                 </div>
 
                 <div className={"group rounded bg-gradient-to-b from-white from-50% to-bg3 min-h-[200px] w:min-h-[250px] relative overflow-hidden"}>
-                    <img src={"/bento/0115.png"} width={300} alt={""}
+                    <img src={"/bento/0115.png?v=2"} width={300} alt={""}
                          className={"absolute -bottom-12 -right-5 group-hover:-translate-y-6" + animated}
                     />
                     <div className={"relative flex flex-col h-full justify-start p-" + padding}>
