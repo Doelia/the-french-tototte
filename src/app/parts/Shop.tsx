@@ -45,7 +45,7 @@ export default function Shop({finition, setFinition, ornement, setOrnement, pack
                 </div>
             </div>
 
-            <div className={"mb-20"}>
+            <div className={"mb-0"}>
                 <div className={"lowercase mb-3 text-4xl text-fg1  " + tartuffo.className}>
                     pack saveur
                 </div>
@@ -56,7 +56,7 @@ export default function Shop({finition, setFinition, ornement, setOrnement, pack
                     <PackDecouverte currentValue={pack} value={"1"} setValue={setPack} id={"pack"}>
                         <div className={"border peer-checked:border-fg1 border-transparent p-4 flex justify-between items-center"}>
                             <div>
-                                <div className="text-md text-fg1 font-bold">Pack started</div>
+                                <div className="text-md text-fg1 font-bold">Pack starter</div>
                                 <div className="text-sm text-fg1">3 saveurs découvertes</div>
                             </div>
                             <div className={"text-sm text-fg2"}>Offert</div>

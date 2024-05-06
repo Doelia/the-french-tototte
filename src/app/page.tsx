@@ -15,6 +15,8 @@ import Mynthos from "@/app/parts/Mynthos";
 import Clients from "@/app/parts/Clients";
 import Shop from "@/app/parts/Shop";
 import {Carousel} from "flowbite-react";
+import {tartuffo} from "@/fonts/fonts";
+import Cart from "@/app/parts/Cart";
 
 export default function Home() {
 
@@ -43,6 +45,7 @@ export default function Home() {
         <div className={"relative z-40"}>
 
             <div className={"h-[200px]"}></div>
+
             <Bento></Bento>
 
             <div className={"h-[300px]"}></div>
@@ -67,9 +70,9 @@ export default function Home() {
             <Clients></Clients>
             <div className={"h-[100px] bg-bg4"}></div>
 
-            <div className={"bg-bg4"}>
-                <div className="container mx-auto max-w-5xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-10">
-                    <div className={"md:w-1/2 xl:w-2/3"}>
+            <div className={"relative bg-bg4"}>
+                <div className="container mx-auto max-w-7xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-12">
+                    <div className={"grow z-40"}>
                         <div className={"sticky top-32"}>
                             <div className="w-100 aspect-video">
                                 <Carousel>
@@ -81,7 +84,7 @@ export default function Home() {
                         </div>
                         <div className={"grow"}></div>
                     </div>
-                    <div className={"md:w-1/2 xl:w-1/3"}>
+                    <div className={"md:w-1/2 xl:w-4/12 z-30"}>
                         <Shop
                             finition={finition} setFinition={setFinition}
                             ornement={ornement} setOrnement={setOrnement}
@@ -90,8 +93,12 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div className={"h-[50px] bg-bg4"}></div>
+
+            <Cart pack={pack} />
+
+        </div>
 
         <Footer />
     </main>
