@@ -35,7 +35,7 @@ export default function Home() {
     <main className="relative">
 
         <div className={"absolute h-screen w-full z-10"}>
-            <video src="https://framerusercontent.com/assets/OyaZIWy09WQG65KyxheDyjLJw.mp4"
+            <video src="/videos/herovideo.mp4"
                    className={"absolute object-cover h-full w-full opacity-70"}
                    loop={true} autoPlay={true} muted={true} controls={false} playsInline={true}
 
@@ -60,19 +60,19 @@ export default function Home() {
 
             <div ref={podsRef}></div>
             <Pods></Pods>
-            <div className={"h-[200px]"}></div>
+            <div className={"h-[100px] w:h-[200px]"}></div>
 
             <Bluetooth></Bluetooth>
-            <div className={"h-[200px]"}></div>
+            <div className={"h-[100px] w:h-[200px]"}></div>
 
             <Spotify />
-            <div className={"h-[200px]"}></div>
+            <div className={"h-[100px] w:h-[200px]"}></div>
 
             <Mynthos />
-            <div className={"h-[200px]"}></div>
+            <div className={"h-[100px] w:h-[200px]"}></div>
 
             <Clients></Clients>
-            <div className={"h-[200px] bg-bg4"}></div>
+            <div className={"h-[100px] w:h-[200px] bg-bg4"}></div>
 
             <div className={"relative bg-bg4"} ref={shopRef}>
                 <div className="container mx-auto max-w-7xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-12">

@@ -6,7 +6,7 @@ export default function Mynthos() {
         <div className={""}>
             <div className="group relative container mx-auto max-w-2xl pt-20 px-5">
 
-                <div className={"flex flex-col md:flex-row gap-12"}>
+                <div className={"flex flex-col md:flex-row gap-12 items-center"}>
                     <div className={"md:w-1/2 text-5xl"}>
                         <img src="/mynthos.webp" alt="" className={"transition hover:skew-y-6"}/>
                     </div>

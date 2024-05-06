@@ -10,7 +10,7 @@ export default function Header({fullHeaderMode, shopRef}) {
 
     return (
         <header className={"fixed w-full z-50 pb-10"}>
-            <div className={"pointer-events-none absolute inset-0 bg-gradient-to-b from-white to-transparent duration-300 " + (fullHeaderMode ? 'opacity-75' : 'opacity-0')}></div>
+            <div className={"pointer-events-none absolute inset-0 bg-gradient-to-b from-white to-transparent duration-300 " + (fullHeaderMode ? 'opacity-100' : 'opacity-0')}></div>
             <div className="relative container mx-auto">
                 <div className={"p-5 relative"}>
                     <div className={"absolute text-center m-auto left-0 right-0 duration-300 opacity-0 " + (fullHeaderMode ? 'md:opacity-100' : 'md:opacity-0')}>

@@ -6,7 +6,7 @@ export default function Spotify() {
         <div className={"bg-gradient-to-b from-bg2 via-bg3 to-bg2"}>
             <div className="group relative container mx-auto max-w-2xl pt-20 px-5">
 
-                <video src="https://framerusercontent.com/assets/1qe4OgqDKLaqjOgmqdYzP91V6c.mp4"
+                <video src="/videos/spotifyvideo.mp4"
                        className={"rounded border border-fg1 mx-auto mb-10"}
                        loop={true} muted={true} playsInline={true} autoPlay={true}></video>
 
