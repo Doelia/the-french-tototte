@@ -30,11 +30,11 @@ export default function Pods() {
                     <div className={"flex gap-10"}>
                         <div>
                             <div className={"text-5xl font-bold mb-5 text-fg1"}>30</div>
-                            <div className={"text-fg3"}>Saveurs disponibles</div>
+                            <div className={"text-fg3 text-sm font-medium"}>Saveurs disponibles</div>
                         </div>
                         <div>
                             <div className={"text-5xl font-bold mb-5 text-fg1"}>11</div>
-                            <div className={"text-fg3"}>Vertues medicinales</div>
+                            <div className={"text-fg3 text-sm font-medium"}>Vertues medicinales</div>
                         </div>
                     </div>
                     <div className={"text-fg3"}>
@@ -52,7 +52,7 @@ function Pod({num, title, description}) {
         <div className={"group relative"}>
             <img src={"/pods/Ombre.png"} width={60} className={"transition duration-300 scale-x-50 group-hover:scale-x-75 absolute bottom-[8px] blur-[2px]"}  alt={""}/>
             <img src={"/pods/IMAGE-" + num + ".png"} width={60} className={"relative transition duration-300 group-hover:-translate-y-14"}  alt={""}/>
-            <div className={"absolute w-[300px] p-10 bottom-[180px] left-[20px] opacity-0 transition duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100 bg-white border border-fg1 translate-y-48 group-hover:translate-y-0"}>
+            <div className={"absolute w-[300px] px-10 py-8 bottom-[200px] left-[30px] opacity-0 transition duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100 bg-white border border-fg1 translate-y-48 group-hover:translate-y-0"}>
                 <img src={"/pods/arrow.png"} width={22} className={"absolute bottom-[-34px] left-[7px]"}  alt={""}/>
                 <div className={"text-fg1 text-xl " + tartuffo.className}>{title}</div>
                 <div className={"text-fg3"}>{description}</div>

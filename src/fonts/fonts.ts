@@ -8,6 +8,11 @@ export const custavo = localFont({
             style: 'normal',
         },
         {
+            path: './gustavo_trial/Gustavo_trial-Medium.otf',
+            weight: '500',
+            style: 'normal',
+        },
+        {
             path: './gustavo_trial/Gustavo_trial-Bold.otf',
             weight: '700',
             style: 'bold',

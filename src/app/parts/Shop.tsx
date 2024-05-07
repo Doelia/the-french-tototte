@@ -20,7 +20,7 @@ export default function Shop({finition, setFinition, ornement, setOrnement, pack
             </div>
 
             <div className={"mb-20"}>
-                <div className={"lowercase mb-3 text-4xl text-fg1  " + tartuffo.className}>
+                <div className={"lowercase mb-2 text-4xl text-fg1  " + tartuffo.className}>
                     Finition
                 </div>
                 <p className={"text-sm text-fg3 mb-5"}>
@@ -35,7 +35,7 @@ export default function Shop({finition, setFinition, ornement, setOrnement, pack
             </div>
 
             <div className={"mb-20"}>
-                <div className={"lowercase mb-3 text-4xl text-fg1  " + tartuffo.className}>
+                <div className={"lowercase mb-2 text-4xl text-fg1  " + tartuffo.className}>
                     ornement
                 </div>
                 <p className={"text-sm text-fg3 mb-5"}>
@@ -107,7 +107,7 @@ function Checkbox({classNameBg, id, value, currentValue, setValue, disabled = fa
 
 function PackDecouverte({children, id, value, currentValue, setValue}) {
     return (
-        <label className={"cursor-pointer"}>
+        <label className={"group cursor-pointer hover:bg-white/50 transition duration-500"}>
             <input type="radio" name={id} className="peer hidden" checked={value === currentValue} onChange={() => setValue(value)} />
             { children }
         </label>

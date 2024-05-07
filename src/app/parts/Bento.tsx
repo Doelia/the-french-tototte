@@ -2,7 +2,7 @@ import {tartuffo} from "@/fonts/fonts";
 
 export default function Bento() {
 
-    const padding = 5;
+    const padding = 6;
     const animated = " transition-translate duration-500 ";
 
     const classTitle = "lowercase text-2xl md:text-3xl text-fg2 mb-2 " + tartuffo.className;
@@ -28,7 +28,7 @@ export default function Bento() {
                              className={"me-10 origin-left group-hover:scale-110" + animated}
                         />
                     </div>
-                    <div className={"w-7/12 pe-" + padding}>
+                    <div className={"w-7/12 px-" + padding}>
                         <h3 className={classTitle}>Personnalisable</h3>
                         <p className={classText}>Ornements et accessoires premium pour créer une vapoteuse unique qui reflète votre style personnel.</p>
                     </div>
@@ -40,7 +40,7 @@ export default function Bento() {
                     <img src={"/bento/moustache.png"} width={200} alt={""}
                          className={"absolute my-10 m-auto left-0 right-0 top-0 group-hover:-rotate-6 group-hover:scale-110" + animated}
                     />
-                    <div className={"p-" + padding + " relative text-center"}>
+                    <div className={"p-" + padding + " relative text-left"}>
                         <h3 className={classTitle}>Made in france</h3>
                         <p className={classText}>Savoir-faire francais pour une expérience de suçotage authentique et exceptionnelle.</p>
                     </div>
@@ -68,13 +68,13 @@ export default function Bento() {
                     </div>
                 </div>
 
-                <div className={"group bg-bg3 hover:bg-white rounded md:min-h-[250px]" + animated}>
+                <div className={"group bg-bg3 hover:bg-white rounded md:min-h-[280px]" + animated}>
                     <div className={"h-full p-"+padding}>
                         <div className={"relative h-full flex items-end"}>
                             <img  src={"/france.svg"} alt={"France"}
-                                  className={"absolute top-0 left-0 w-[25px] h-[10px] md:group-hover:h-[100px]" + animated}
+                                  className={"absolute top-0 left-0 w-[25px] h-[10px] md:group-hover:h-[80px]" + animated}
                             />
-                            <div className={"hidden md:block absolute transition-[opacity] top-0 left-0 w-[25px] h-[100px] bg-gradient-to-b from-transparent to-white opacity-0 group-hover:opacity-100"}></div>
+                            <div className={"hidden md:block absolute transition-[opacity] duration-500 top-0 left-0 w-[25px] h-[80px] bg-gradient-to-b from-transparent to-white opacity-0 group-hover:opacity-100"}></div>
                             <div className={"mt-5 md:mt-0 relative"}>
                                 <h3 className={classTitle}>Hebergement 100% français</h3>
                                 <p className={classText}>Notre site web est hébergé en france grâce à notre partenaire o2switch.</p>
