@@ -3,17 +3,17 @@ import localFont from "next/font/local";
 export const custavo = localFont({
     src: [
         {
-            path: './gustavo_trial/Gustavo_trial-Regular.otf',
+            path: './gustavo/Gustavo-Regular.woff',
             weight: '400',
             style: 'normal',
         },
         {
-            path: './gustavo_trial/Gustavo_trial-Medium.otf',
+            path: './gustavo/Gustavo-Medium.woff',
             weight: '500',
             style: 'normal',
         },
         {
-            path: './gustavo_trial/Gustavo_trial-Bold.otf',
+            path: './gustavo/Gustavo-Bold.woff',
             weight: '700',
             style: 'bold',
         }
@@ -23,12 +23,12 @@ export const custavo = localFont({
 export const tartuffo = localFont({
     src: [
         {
-            path: './tartuffo_trial/Tartuffo_Trial-Regular.otf',
+            path: './tartuffo/Tartuffo-Regular.woff',
             weight: '400',
             style: 'normal',
         },
         {
-            path: './tartuffo_trial/Tartuffo_Trial-Bold.otf',
+            path: './tartuffo/Tartuffo-Bold.woff',
             weight: '700',
             style: 'bold',
         }

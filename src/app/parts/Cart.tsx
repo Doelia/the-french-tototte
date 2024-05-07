@@ -55,7 +55,7 @@ export default function Cart({pack, ornement, finition}) {
             <div className="container mx-auto max-w-7xl px-5 flex flex-col md:flex-row justify-end">
                 <div className={"md:w-1/2 xl:w-4/12 px-5 pt-10"}>
                     <div className={"lowercase mb-3 text-4xl " + tartuffo.className}>
-                        Votre panier est pret
+                        Votre panier est prêt
                     </div>
                     <p className={"text-sm text-fg3 mb-5"}>
                         Récapitulatif de votre commande

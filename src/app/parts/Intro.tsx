@@ -26,10 +26,10 @@ export default function Intro({refFirstScreenTrigger, bentoRef}) {
                     <h1 className={"lowercase text-2xl tracking-tight mb-3 text-fg2 " + tartuffo.className} ref={refFirstScreenTrigger}>The french tototte</h1>
                     <img className={"mb-8"} src={"/france.svg"} width={24} height={6} alt={"France"} />
                     <div className={"group relative mb-8"}>
-                        <h2 className={"lowercase text-5xl md:text-6xl text-fg2 tracking-tight " + tartuffo.className}>Pour ceux qui osent etre differents</h2>
-                        <h2 className={"lowercase text-5xl md:text-6xl text-fg2 tracking-tight " + tartuffo.className + " " + textAnimated}>Pour ceux qui osent etre differents</h2>
+                        <h2 className={"lowercase text-5xl md:text-6xl text-fg2 tracking-tight " + tartuffo.className}>Pour ceux qui osent être différents</h2>
+                        <h2 className={"lowercase text-5xl md:text-6xl text-fg2 tracking-tight " + tartuffo.className + " " + textAnimated}>Pour ceux qui osent être différents</h2>
                     </div>
-                    <SimpleButton title={"Decouvrir"} onClick={btnDecouvrir}></SimpleButton>
+                    <SimpleButton title={"Découvrir"} onClick={btnDecouvrir}></SimpleButton>
                 </div>
                 <div className={"relative h-10"}>
                     <div className={"h-[150px] w-[1px] bg-gradient-to-b from-fg2 to-transparent absolute left-1/2 z-40"}></div>

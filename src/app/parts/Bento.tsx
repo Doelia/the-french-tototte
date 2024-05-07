@@ -17,7 +17,7 @@ export default function Bento() {
                          className={"absolute top-10 origin-left group-hover:translate-y-2 group-hover:scale-110" + animated}
                     />
                     <div className={"p-"+padding+" relative"}>
-                        <h3 className={classTitle}>Elegante et sophistiquee</h3>
+                        <h3 className={classTitle}>Élégante et sophistiquée</h3>
                         <p className={classText}>Design raffiné et ornements exclusifs pour une expérience de vapotage distinguée et élégante.</p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ export default function Bento() {
                             />
                             <div className={"hidden md:block absolute transition-[opacity] duration-500 top-0 left-0 w-[25px] h-[80px] bg-gradient-to-b from-transparent to-white opacity-0 group-hover:opacity-100"}></div>
                             <div className={"mt-5 md:mt-0 relative"}>
-                                <h3 className={classTitle}>Hebergement 100% français</h3>
+                                <h3 className={classTitle}>Hébergement 100% français</h3>
                                 <p className={classText}>Notre site web est hébergé en france grâce à notre partenaire o2switch.</p>
                             </div>
                         </div>

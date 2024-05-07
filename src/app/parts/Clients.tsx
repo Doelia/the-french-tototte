@@ -10,7 +10,7 @@ export default function Clients() {
     return (
         <div className={"bg-gradient-to-b from-bg2 to-bg4"}>
             <div className="container mx-auto max-w-md px-5 text-center mb-5">
-                <div className={"mb-5 text-6xl text-fg1  " + tartuffo.className}>ils ont sucotes,<br/>ils ont adore</div>
+                <div className={"mb-5 text-6xl text-fg1  " + tartuffo.className}>ils ont suçotés,<br/>ils ont adoré</div>
                 <div className={"text-fg3 text-sm"}>Nos totottes sont utilisées par les plus grands de ce monde et si vous voulez mon avis ce n’est pas un hasard</div>
             </div>
             <div className="container mx-auto max-w-4xl pt-20 px-5">

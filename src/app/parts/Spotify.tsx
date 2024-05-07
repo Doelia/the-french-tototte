@@ -11,7 +11,7 @@ export default function Spotify() {
                        loop={true} muted={true} playsInline={true} autoPlay={true}></video>
 
                 <div className={"flex flex-col md:flex-row gap-10"}>
-                    <div className={"md:w-1/2 text-6xl text-fg1  " + tartuffo.className}>sucotez vos titres preferes</div>
+                    <div className={"md:w-1/2 text-6xl text-fg1  " + tartuffo.className}>suçotez vos titres préférés</div>
                     <div className={"md:w-1/2 text-fg3 text-sm"}>
                         <button className={"border border-fg2 p-3 text-fg2 mb-2"}>
                             <i className={"fab fa-spotify me-2"}></i>
