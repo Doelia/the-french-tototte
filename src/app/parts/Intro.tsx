@@ -22,7 +22,7 @@ export default function Intro({refFirstScreenTrigger, bentoRef}) {
     ;
 
     function btnDecouvrir() {
-        bentoRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        bentoRef.current.scrollIntoView({ behavior: "smooth"});
     }
 
     return (

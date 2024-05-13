@@ -5,7 +5,7 @@ import SimpleButton from "@/app/components/SimpleButton";
 export default function Techno({podsRef}) {
 
     function btnDecouvrir() {
-        podsRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        podsRef.current.scrollIntoView({ behavior: "smooth"});
     }
 
     return (

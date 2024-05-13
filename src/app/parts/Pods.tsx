@@ -24,6 +24,11 @@ export default function Pods() {
                         <div className={"absolute bg-gradient-to-r from-bg2 via-transparent to-bg2 inset-0"}></div>
                     </div>
                 </div>
+                <div className="block md:hidden absolute -translate-y-[170px] z-40 w-full">
+                    <div className={"bg-gradient-to-b from-bg3 to-bg2 h-[50px] relative"}>
+                        <div className={"absolute bg-gradient-to-r from-bg2 via-transparent to-bg2 inset-0"}></div>
+                    </div>
+                </div>
             </div>
             <div className="container mx-auto max-w-xl pt-20 px-5 z-50">
                 <div className={"flex gap-10 md:flex-row flex-col"}>

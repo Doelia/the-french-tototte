@@ -5,7 +5,7 @@ import {tartuffo} from "@/fonts/fonts";
 export default function Header({fullHeaderMode, shopRef}) {
 
     function btnShop() {
-        shopRef.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        shopRef.current.scrollIntoView({ behavior: "smooth" });
     }
 
     return (

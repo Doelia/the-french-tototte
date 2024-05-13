@@ -53,12 +53,18 @@ export default function Home() {
 
             <div className={"h-[300px]"}></div>
             <div className={"mx-auto relative container max-w-3xl h-3"}>
-                <img src={"/videos/techno.webp"} className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"} width={500} />
+                <div className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px]"}>
+                    <img src={"/videos/techno.webp"} className={"w-full"} width={500} />
+                    <div className="absolute h-1/2 w-20 left-0 top-0 bg-gradient-to-r from-bg2 to-transparent"/>
+                    <div className="absolute h-1/2 w-20 right-0 top-0 bg-gradient-to-r from-transparent to-bg2"/>
+                </div>
             </div>
 
             <Techno podsRef={podsRef}></Techno>
 
-            <div ref={podsRef}></div>
+            <div className={"relative"}>
+                <div ref={podsRef} className={"absolute top-[-200px]"}></div>
+            </div>
             <Pods></Pods>
             <div className={"h-[100px] md:h-[200px]"}></div>
 
@@ -74,7 +80,7 @@ export default function Home() {
             <Clients></Clients>
             <div className={"h-[100px] md:h-[200px] bg-bg4"}></div>
 
-            <div className={"relative bg-bg4"} ref={shopRef}>
+            <div className={"relative bg-bg4"} ref={shopRef} id={"shop"}>
                 <div className="container mx-auto max-w-7xl pt-20 px-5 z-50 flex flex-col md:flex-row justify-end gap-12">
                     <div className={"grow z-40"}>
                         <div className={"sticky top-32"}>
