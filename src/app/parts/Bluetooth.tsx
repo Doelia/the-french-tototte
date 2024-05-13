@@ -5,7 +5,7 @@ export default function Bluetooth() {
         <div className="group relative container mx-auto max-w-4xl pt-20 px-5">
 
             <div className={"md:w-2/6 mb-20"}>
-                <div className={"text-6xl text-fg1 mb-5 " + tartuffo.className}>sucotez sans soucis</div>
+                <div className={"text-6xl text-fg1 mb-5 " + tartuffo.className}>suçotez sans soucis</div>
                 <div className={"text-fg3"}>
                     La tototte offre une <strong className={"font-bold text-fg1"}>autonomie impressionnante</strong> de 50 heures de suçotage grâce à sa batterie au lithium,
                     assurant ainsi des <strong className={"font-bold text-fg1"}>heures de plaisir</strong> ininterrompu pour encore plus de confort et de tranquillité.
