@@ -1,5 +1,6 @@
 import {tartuffo} from "@/fonts/fonts";
 import {useState} from "react";
+import {Tooltip} from "flowbite-react";
 
 export default function Shop({finition, setFinition, ornement, setOrnement, pack, setPack}) {
 
@@ -97,10 +98,19 @@ export default function Shop({finition, setFinition, ornement, setOrnement, pack
 }
 
 function Checkbox({classNameBg, id, value, currentValue, setValue, disabled = false}) {
+
+
+    const content = (
+        <div className={"shadow-inner border peer-checked:outline outline-fg1 outline-offset-2 p-3 rounded-full aspect-square h-[40px] " + classNameBg + (disabled ? ' opacity-25' : ' cursor-pointer')}></div>
+    )
+
     return (
-        <label className={"px-1 " + (disabled ? 'opacity-25' : 'cursor-pointer')}>
+        <label className={""}>
             <input type="radio" name={id} className="peer hidden" checked={value === currentValue} onChange={() => !disabled && setValue(value)} />
-            <div className={"shadow-inner border peer-checked:outline outline-fg1 outline-offset-2 p-3 rounded-full aspect-square h-[40px] " + classNameBg}></div>
+            { disabled ?
+                <Tooltip content={disabled ? 'Bientôt disponible' : null} >{content}</Tooltip>
+                : content
+            }
         </label>
     )
 }
