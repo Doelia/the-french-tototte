@@ -8,14 +8,14 @@ export default function Pods() {
         <>
             <div className="relative container mx-auto max-w-3xl pt-20 px-5 z-50">
                 <div className={"grid grid-cols-4 md:grid-cols-8 gap-3"}>
-                    <Pod num={0} title={"Fraise"} description={"Une fraise française cueilli dans nos chers régions dg"}></Pod>
-                    <Pod num={1} title={"Menthe"} description={"Pour une haleine fraiche avant vos réunions"}></Pod>
-                    <Pod num={2} title={"Bubble Gomme"} description={"Un goût sucré pour retourner en enfance"}></Pod>
-                    <Pod num={3} title={"Spicy"} description={"Pour ceux qui aiment vivre des nouvelles chose tout les jours"}></Pod>
-                    <Pod num={4} title={"Bacon"} description={"Un goût de porc pour honorer nos élevages made in france"}></Pod>
-                    <Pod num={5} title={"France"} description={"Suçotez la République avec cet étendar bleu blanc rouge"}></Pod>
-                    <Pod num={6} title={"Jus de Mynthos"} description={"Pofitez du gout concentré de la premiere traite du matin"}></Pod>
-                    <Pod num={7} title={"Montaza et Torez"} description={"Pour retrouver le goût d'un vin unique"}></Pod>
+                    <Pod num={0} title={"Fraise"} description={"Une fraise française cueilli dans nos chers régions dg"} direction={"left"}></Pod>
+                    <Pod num={1} title={"Menthe"} description={"Pour une haleine fraiche avant vos réunions"} direction={"left"}></Pod>
+                    <Pod num={2} title={"Bubble Gomme"} description={"Un goût sucré pour retourner en enfance"} direction={"right"}></Pod>
+                    <Pod num={3} title={"Spicy"} description={"Pour ceux qui aiment vivre des nouvelles chose tout les jours"} direction={"right"}></Pod>
+                    <Pod num={4} title={"Bacon"} description={"Un goût de porc pour honorer nos élevages made in france"} direction={"left"}></Pod>
+                    <Pod num={5} title={"France"} description={"Suçotez la République avec cet étendar bleu blanc rouge"} direction={"left"}></Pod>
+                    <Pod num={6} title={"Jus de Mynthos"} description={"Pofitez du gout concentré de la premiere traite du matin"} direction={"right"}></Pod>
+                    <Pod num={7} title={"Montaza et Torez"} description={"Pour retrouver le goût d'un vin unique"} direction={"right"}></Pod>
                 </div>
             </div>
             <div className={"relative container mx-auto max-w-4xl"}>
@@ -51,14 +51,26 @@ export default function Pods() {
     )
 }
 
-function Pod({num, title, description}) {
+function Pod({num, title, description, direction}) {
+
+    let classTooltip =
+        direction === "left"
+            ? "left-[30px] bottom-[200px]"
+            : "left-[-200px] bottom-[200px]"
+        ;
+
+    let classArrow =
+        direction === 'left'
+        ? 'left-[7px]'
+        : 'left-[200px] scale-x-[-1]'
+
 
     return (
         <div className={"group relative"}>
             <img src={"/pods/Ombre.png"} width={60} className={"transition duration-300 scale-x-50 group-hover:scale-x-75 absolute bottom-[8px] blur-[2px]"}  alt={""}/>
             <img src={"/pods/IMAGE-" + num + ".png"} width={60} className={"relative transition duration-300 group-hover:-translate-y-14"}  alt={""}/>
-            <div className={"absolute w-[300px] px-10 py-8 bottom-[200px] left-[30px] opacity-0 transition duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100 bg-white border border-fg1 translate-y-48 group-hover:translate-y-0"}>
-                <img src={"/pods/arrow.png"} width={22} className={"absolute bottom-[-34px] left-[7px]"}  alt={""}/>
+            <div className={classTooltip + " absolute w-[300px] px-10 py-8  opacity-0 transition duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100 bg-white border border-fg1 translate-y-48 group-hover:translate-y-0"}>
+                <img src={"/pods/arrow.png"} width={22} className={"absolute bottom-[-34px] " + classArrow}  alt={""}/>
                 <div className={"text-fg1 text-xl " + tartuffo.className}>{title}</div>
                 <div className={"text-fg3"}>{description}</div>
             </div>

@@ -13,6 +13,12 @@ const config: Config = {
       width: {
         '200px': '200px',
       },
+      left: {
+        '7px': '7px',
+      },
+      right: {
+        '30px': '30px',
+      },
       backgroundSize: {
         'size-200': '200% 200%',
       },
