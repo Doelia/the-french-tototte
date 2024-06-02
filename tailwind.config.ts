@@ -15,6 +15,14 @@ const config: Config = {
       },
       left: {
         '7px': '7px',
+        '90px': '90px',
+        '25px': '25px',
+        '-60px': '-60px',
+        '-175px': '-175px',
+        '-180px': '-180px',
+        '-235px': '-235px',
+        '240px': '240px',
+        '185px': '185px',
       },
       right: {
         '30px': '30px',

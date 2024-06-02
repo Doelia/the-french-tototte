@@ -53,23 +53,35 @@ export default function Pods() {
 
 function Pod({num, title, description, direction}) {
 
-    let classTooltip =
-        direction === "left"
-            ? "left-[30px] bottom-[200px]"
-            : "left-[-200px] bottom-[200px]"
-        ;
+    let classTooltip = "";
+    let classArrow = "";
 
-    let classArrow =
-        direction === 'left'
-        ? 'left-[7px]'
-        : 'left-[200px] scale-x-[-1]'
+    if (num % 4 === 0) {
+        classTooltip = " left-[30px] bottom-[200px]"
+        classArrow = "left-[7px]"
+    }
+
+    if (num % 4 === 1)  {
+        classTooltip = " left-[-60px] bottom-[200px]"
+        classArrow = "left-[90px]"
+    }
+
+    if (num % 4 === 2) {
+        classTooltip = " left-[-175px] bottom-[200px]"
+        classArrow = "left-[185px] scale-x-[-1]"
+    }
+
+    if (num % 4 === 3) {
+        classTooltip = " left-[-235px] bottom-[200px]"
+        classArrow = "left-[240px] scale-x-[-1]"
+    }
 
 
     return (
         <div className={"group relative"}>
-            <img src={"/pods/Ombre.png"} width={60} className={"transition duration-300 scale-x-50 group-hover:scale-x-75 absolute bottom-[8px] blur-[2px]"}  alt={""}/>
+            <img src={"/pods/Ombre.png"} width={60} className={"transition duration-300 scale-x-50 group-hover:scale-x-75 absolute bottom-[2px] blur-[2px]"}  alt={""}/>
             <img src={"/pods/IMAGE-" + num + ".png"} width={60} className={"relative transition duration-300 group-hover:-translate-y-14"}  alt={""}/>
-            <div className={classTooltip + " absolute w-[300px] px-10 py-8  opacity-0 transition duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100 bg-white border border-fg1 translate-y-48 group-hover:translate-y-0"}>
+            <div className={classTooltip + " absolute w-[300px] px-5 py-5  opacity-0 transition duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100 bg-white border border-fg1 translate-y-48 group-hover:translate-y-0"}>
                 <img src={"/pods/arrow.png"} width={22} className={"absolute bottom-[-34px] " + classArrow}  alt={""}/>
                 <div className={"text-fg1 text-xl " + tartuffo.className}>{title}</div>
                 <div className={"text-fg3"}>{description}</div>
