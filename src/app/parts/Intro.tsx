@@ -1,7 +1,5 @@
 import {tartuffo} from "@/fonts/fonts";
-import {useIsReached} from "@/app/useIsReached";
 import {useEffect, useRef} from "react";
-import Link from "next/link";
 import SimpleButton from "@/app/components/SimpleButton";
 
 export default function Intro({refFirstScreenTrigger, bentoRef}) {

@@ -1,6 +1,5 @@
 import {tartuffo} from "@/fonts/fonts";
 import {useRef} from "react";
-import {useIsReached} from "@/app/useIsReached";
 import {useIsVisible} from "@/app/useIsVisible";
 
 export default function Clients() {

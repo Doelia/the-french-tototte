@@ -3,7 +3,6 @@
 import Bento from "@/app/parts/Bento";
 import Intro from "@/app/parts/Intro";
 import Header from "@/app/parts/Header";
-import Link from "next/link";
 import React, {useRef, useState} from "react";
 import {useIsReached} from "@/app/useIsReached";
 import Footer from "@/app/parts/Footer";

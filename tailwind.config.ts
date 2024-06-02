@@ -23,6 +23,7 @@ const config: Config = {
         '-235px': '-235px',
         '240px': '240px',
         '185px': '185px',
+        '-full': '-100%',
       },
       right: {
         '30px': '30px',
