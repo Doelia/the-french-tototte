@@ -19,7 +19,7 @@ export default function Clients() {
                         <img src="/clients/baghera.webp" alt="" className={"rounded-full mb-5 transition"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Baghera Jones</div>
                         <div className="flex items-center mt-2 gap-2">
-                            <i className="fa-brands fa-twitch"></i>
+                            <i aria-hidden className="fa-brands fa-twitch"></i>
                             <div className={"text-md text-fg1 "}>
                                 Streamer
                             </div>
@@ -32,7 +32,7 @@ export default function Clients() {
                         <img src="/clients/jdg.webp" alt="" className={"rounded-full mb-5 transition"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Joueur_du_Grenier</div>
                         <div className="flex items-center mt-2 gap-2">
-                            <i className="fa-brands fa-youtube"></i>
+                            <i aria-hidden className="fa-brands fa-youtube"></i>
                             <div className={"text-md text-fg1"}>
                                 Youtubeur
                             </div>
@@ -45,7 +45,7 @@ export default function Clients() {
                         <img src="/clients/etoiles.webp" alt="" className={"rounded-full mb-5 transition"}/>
                         <div className={"text-xl text-fg1 " + tartuffo.className}>/Etoiles</div>
                         <div className="flex items-center mt-2 gap-2">
-                            <i className="fa-brands fa-twitch"></i>
+                            <i aria-hidden className="fa-brands fa-twitch"></i>
                             <div className={"text-md text-fg1"}>
                                 Streamer
                             </div>

@@ -11,10 +11,10 @@ export default function Footer() {
                     <div>
                         <div className={"mb-2 flex gap-2"}>
                             <Link href={"https://www.youtube.com/watch?v=FVEqE47pOLw&ab_channel=BastiUi"}>
-                                <i className="fa-brands fa-youtube text-lg text-fg3"></i>
+                                <i aria-hidden className="fa-brands fa-youtube text-lg text-fg3"></i>
                             </Link>
                             <Link href={"https://twitter.com/BastiUi"}>
-                                <i className="fa-brands fa-x-twitter text-lg text-fg3"></i>
+                                <i aria-hidden className="fa-brands fa-x-twitter text-lg text-fg3"></i>
                             </Link>
                         </div>
                         <div className={"text-nowrap text-xl md:text-6xl text-fg3 " + tartuffo.className}>the french tototte</div>
@@ -22,7 +22,7 @@ export default function Footer() {
                     <div className={"text-fg3 text-xs mt-3"}>
                         <div>
                             Copyright © 2024 TheFrenchTototte. Tous droits réservés
-                            <span className={"text-fg2"}> — Utilisation des cookies — Mention légales. </span>
+                            <span aria-hidden className={"text-fg2"}> — Utilisation des cookies — Mention légales. </span>
                         </div>
                         <div>
                             Sur une idée originale d’Antoine Daniel, concept art par Tera Silver, 3D par Aurélien Thomas, logo par Baloprisonnier, 3D print par Lunath, Dev web par Stéphane Wouters & Packaging par Illusion

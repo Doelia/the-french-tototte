@@ -38,7 +38,6 @@ export default function Home() {
             <video src="/videos/herovideo.mp4"
                    className={"absolute object-cover h-full w-full opacity-70"}
                    loop={true} autoPlay={true} muted={true} controls={false} playsInline={true}
-
             ></video>
         </div>
 
@@ -54,7 +53,7 @@ export default function Home() {
             <div className={"h-[300px]"}></div>
             <div className={"mx-auto relative container max-w-3xl h-3"}>
                 <div className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px]"}>
-                    <img src={"/videos/techno.webp"} className={"w-full"} width={500} />
+                    <img src={"/videos/techno.webp"} className={"w-full"} width={500} alt={"Video"} />
                     <div className="absolute h-1/2 w-20 left-0 top-0 bg-gradient-to-r from-bg2 to-transparent"/>
                     <div className="absolute h-1/2 w-20 right-0 top-0 bg-gradient-to-r from-transparent to-bg2"/>
                 </div>

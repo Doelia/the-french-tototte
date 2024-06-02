@@ -14,7 +14,7 @@ export default function Spotify() {
                     <div className={"md:w-1/2 text-6xl text-fg1  " + tartuffo.className}>suçotez vos titres préférés</div>
                     <div className={"md:w-1/2 text-fg3 text-sm"}>
                         <button className={"border border-fg2 p-3 text-fg2 mb-2"}>
-                            <i className={"fab fa-spotify me-2"}></i>
+                            <i aria-hidden className={"fab fa-spotify me-2"}></i>
                             Spotify Connect®
                         </button>
                         <div className={"mb-5 text-xs"}>En partenariat exclusif avec Spotify</div>
