@@ -5,19 +5,14 @@ import {useIsVisible} from "@/app/useIsVisible";
 export default function Mynthos() {
 
     const refLueur = useRef(null);
-    //
-    // const isVisible = useIsVisible(refLueur);
-    //
-    let classListAnimation = "";
-    // if (isVisible) {
-    //     classListAnimation = "top-[-100%] left-[-100%]";
-    // }
 
     useEffect(() => {
         let i = setInterval(() => {
+            refLueur.current.classList.toggle("top-full");
+            refLueur.current.classList.toggle("left-full");
             refLueur.current.classList.toggle("top-[-100%]");
             refLueur.current.classList.toggle("left-[-100%]");
-        }, 2200);
+        }, 2500);
         return () => clearInterval(i);
     }, []);
 
@@ -28,7 +23,7 @@ export default function Mynthos() {
                 <div className={"flex flex-col md:flex-row gap-12 items-center"}>
                     <div className={"relative group md:w-1/2 text-5xl overflow-hidden"} style={{maskImage: 'url(/mynthos.webp)'}}>
                         <img src="/mynthos.webp" alt="" className={"transition"}/>
-                        <img ref={refLueur} src={"/lueur.png"} alt="" className={"absolute top-full left-full w-full h-full transition-all mix-blend-overlay ease-in-out duration-[3000ms] " + classListAnimation}/>
+                        <img ref={refLueur} src={"/lueur.png"} alt="" className={"absolute top-full left-full w-full h-full transition-all mix-blend-overlay ease-in-out duration-[2500ms] "}/>
                     </div>
                     <div className={"md:w-1/2 text-fg3 text-sm"}>
                         <div className={"mb-3 text-6xl text-fg1  " + tartuffo.className}>le jus de mynthos</div>
